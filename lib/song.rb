@@ -30,7 +30,7 @@ class Song
   end
 
   def self.genre_count
-    self.genres.to_h
+    self.genres
     binding.pry
   end
 
