@@ -30,8 +30,7 @@ class Song
   end
 
   def self.genre_count
-    genres_hash = {}
-    self.genres.map do 
+    self.genres.to_h 
     binding.pry
   end
 
