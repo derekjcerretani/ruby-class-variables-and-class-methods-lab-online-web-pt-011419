@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists.delete_if { |artist| @@artists.count(artist) > 1 }
+    @@artists.reject { |artist| @@artists.count(artist) > 1 }
     binding.pry
   end
 
