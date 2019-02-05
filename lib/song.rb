@@ -23,7 +23,7 @@ class Song
   end
 
   def self.genre_count
-    GENRE_COUNT << @genre unless GENRE_COUNT.include?(@genre)
+    @@genre << @genre unless @@genre.include?(@genre)
   end
 
 end
