@@ -25,7 +25,7 @@ class Song
     @@artists.detect do |artist|
       @@artists.count(artist) > 1
     end
-    #binding.pry
+    binding.pry
   end
 
   def self.genre_count
