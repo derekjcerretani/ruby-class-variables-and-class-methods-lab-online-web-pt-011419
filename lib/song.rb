@@ -30,7 +30,7 @@ class Song
   end
 
   def self.genre_count
-    hash = Hash[self.genres.collect { |genre| [genre, "#{genre.count}" ] } ]
+    hash = Hash[self.genres.collect { |genre| [genre, "" ] } ]
     binding.pry
   end
 
