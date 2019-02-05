@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists.detect do |artist|
+    @@artists.select do |artist|
       @@artists.count(artist) > 1
     end
     binding.pry
