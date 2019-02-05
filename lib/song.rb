@@ -30,7 +30,7 @@ class Song
   end
 
   def self.genre_count
-    hash = Hash[self.genres]
+    Hash[self.genres]
     binding.pry
   end
 
