@@ -22,9 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists.select do |artist|
-      @@artists.count(artist) > 1
-    end
+    @@artists.select { |artist| @@artists.count(artist) > 1 }.uniq
     binding.pry
   end
 
