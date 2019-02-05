@@ -22,8 +22,8 @@ class Song
   end
 
   def self.artists
-    @@artists unless @@artists.include?(@artist)
-    binding.pry
+    @@artists
+    #binding.pry
   end
 
   def self.genre_count
